@@ -1,0 +1,64 @@
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #fffbea;
+      font-family: sans-serif;
+      height: 100vh;
+      color: #444;
+    }
+
+    #login, #content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fffaf0;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      z-index: 10;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #fdd835;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #fdd835;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    h1 {
+      color: #f4b400;
+    }
+
+    #content {
+      display: none;
+      z-index: 10;
+    }
+
+    .flower {
+      position: absolute;
+      pointer-events: none;
+      user-select: none;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 1s ease-out, opacity 1s ease-out;
+    }
+
+    .flower.show {
+      opacity: 1;
+      transform: scale(1);
+    }
